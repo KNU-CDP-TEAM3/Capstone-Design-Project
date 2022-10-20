@@ -349,8 +349,8 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectExerciseFragment(ExerciseFragment exerciseFragment) {
-      injectExerciseFragment2(exerciseFragment);
+    public void injectExerciseFragment(ExerciseFragment arg0) {
+      injectExerciseFragment2(arg0);
     }
 
     @Override
@@ -362,8 +362,8 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectStartupFragment(StartupFragment startupFragment) {
-      injectStartupFragment2(startupFragment);
+    public void injectStartupFragment(StartupFragment arg0) {
+      injectStartupFragment2(arg0);
     }
 
     @Override
@@ -585,8 +585,8 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectExerciseService(ExerciseService exerciseService) {
-      injectExerciseService2(exerciseService);
+    public void injectExerciseService(ExerciseService arg0) {
+      injectExerciseService2(arg0);
     }
 
     @CanIgnoreReturnValue

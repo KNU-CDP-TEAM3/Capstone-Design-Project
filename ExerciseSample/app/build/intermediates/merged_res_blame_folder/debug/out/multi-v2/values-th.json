@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/iinseong/Downloads/ss/health-samples/health-services/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
+            "outputFile": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
             "map": [
                 {
                     "source": "/Users/iinseong/.gradle/caches/transforms-3/f594d46ce5a851618862a07fee65a744/transformed/wear-1.2.0/res/values-th/values-th.xml",

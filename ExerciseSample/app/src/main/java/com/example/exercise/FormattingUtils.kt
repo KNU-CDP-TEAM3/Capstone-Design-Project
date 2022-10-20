@@ -97,3 +97,11 @@ fun form(spO2: Long) = buildSpannedString {
         append(" %")
     }
 }
+
+
+fun fo(spO2: Long) = buildSpannedString {
+    append("%02.2f".format(spO2))
+    inSpans(RelativeSizeSpan(UNITS_RELATIVE_SIZE)){
+        append(" %")
+    }
+}

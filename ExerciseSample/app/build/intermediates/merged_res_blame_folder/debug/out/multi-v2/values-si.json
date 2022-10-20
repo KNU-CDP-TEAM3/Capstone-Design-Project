@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/iinseong/Downloads/ss/health-samples/health-services/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml",
+            "outputFile": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/Users/iinseong/.gradle/caches/transforms-3/335dbba9cab6ef03b58eec0050341765/transformed/navigation-ui-2.3.5/res/values-si/values-si.xml",

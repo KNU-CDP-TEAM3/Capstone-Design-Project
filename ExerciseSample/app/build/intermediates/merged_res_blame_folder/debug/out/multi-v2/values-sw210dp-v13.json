@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw210dp-v13/values-sw210dp-v13.xml",
+            "outputFile": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw210dp-v13/values-sw210dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/iinseong/.gradle/caches/transforms-3/f594d46ce5a851618862a07fee65a744/transformed/wear-1.2.0/res/values-sw210dp-v13/values-sw210dp-v13.xml",

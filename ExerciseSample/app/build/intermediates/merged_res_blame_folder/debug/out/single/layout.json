@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_not_available.xml",
-        "source": "/Users/iinseong/Desktop/andro/ExerciseSample/app/src/main/res/layout/fragment_not_available.xml"
+        "merged": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_not_available.xml",
+        "source": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_not_available.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_startup.xml",
-        "source": "/Users/iinseong/Desktop/andro/ExerciseSample/app/src/main/res/layout/fragment_startup.xml"
+        "merged": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_startup.xml",
+        "source": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_startup.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/Users/iinseong/Desktop/andro/ExerciseSample/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_exercise.xml",
+        "source": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_exercise.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_exercise.xml",
-        "source": "/Users/iinseong/Desktop/andro/ExerciseSample/app/src/main/res/layout/fragment_exercise.xml"
+        "merged": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_prepare.xml",
+        "source": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_prepare.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_prepare.xml",
-        "source": "/Users/iinseong/Desktop/andro/ExerciseSample/app/src/main/res/layout/fragment_prepare.xml"
+        "merged": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/activity_main.xml"
     }
 ]

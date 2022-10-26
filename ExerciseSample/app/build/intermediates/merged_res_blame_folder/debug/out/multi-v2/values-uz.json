@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml",
+            "outputFile": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml",
             "map": [
                 {
                     "source": "/Users/iinseong/.gradle/caches/transforms-3/ff3b715298d2bd9c0ec42ad91e43e60a/transformed/appcompat-1.2.0/res/values-uz/values-uz.xml",

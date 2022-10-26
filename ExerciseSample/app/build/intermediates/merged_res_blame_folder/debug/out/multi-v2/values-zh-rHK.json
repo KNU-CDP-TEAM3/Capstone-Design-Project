@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/iinseong/Desktop/andro/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "/Users/iinseong/Desktop/andro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "/Users/iinseong/.gradle/caches/transforms-3/93e3a97ab02553cbf4bf4b2ce2d07fff/transformed/core-1.6.0/res/values-zh-rHK/values-zh-rHK.xml",

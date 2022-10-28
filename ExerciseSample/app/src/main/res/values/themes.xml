@@ -17,9 +17,11 @@
 
 <resources>
     <color name="primary_orange">#FF9800</color>
+    <color name="primary_pink">#FD699C</color>
+    <color name="primary_pinkorange">#FD8569</color>
 
-    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
-        <item name="colorPrimary">@color/primary_orange</item>
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary_pink</item>
         <item name="colorControlActivated">?colorPrimary</item>
     </style>
 </resources>

@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/iinseong/Desktop/Android/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-round-v23/values-round-v23.xml",
+            "map": [
+                {
+                    "source": "/Users/iinseong/Desktop/Android/ExerciseSample/app/src/main/res/values-round/dimens.xml",
+                    "from": {
+                        "startLines": "5,4,3,2",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "209,159,107,57",
+                        "endColumns": "46,48,50,48",
+                        "endOffsets": "251,203,153,101"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "118,165,214,265",
+                        "endColumns": "46,48,50,48",
+                        "endOffsets": "160,209,260,309"
+                    }
+                },
+                {
+                    "source": "/Users/iinseong/.gradle/caches/transforms-3/f594d46ce5a851618862a07fee65a744/transformed/wear-1.2.0/res/values-round-v23/values-round-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,118,204",
+                        "endColumns": "62,85,79",
+                        "endOffsets": "113,199,279"
+                    },
+                    "to": {
+                        "startLines": "2,7,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,314,400",
+                        "endColumns": "62,85,79",
+                        "endOffsets": "113,395,475"
+                    }
+                }
+            ]
+        }
+    ]
+}

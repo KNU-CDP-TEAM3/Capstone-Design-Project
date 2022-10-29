@@ -25,9 +25,6 @@ public final class FragmentDistanceBinding implements ViewBinding {
   public final Button backButton;
 
   @NonNull
-  public final TextView bpmText;
-
-  @NonNull
   public final ImageView distanceIcon;
 
   @NonNull
@@ -37,11 +34,10 @@ public final class FragmentDistanceBinding implements ViewBinding {
   public final TextView heartRate;
 
   private FragmentDistanceBinding(@NonNull LinearLayout rootView, @NonNull Button backButton,
-      @NonNull TextView bpmText, @NonNull ImageView distanceIcon, @NonNull TextView distanceText,
+      @NonNull ImageView distanceIcon, @NonNull TextView distanceText,
       @NonNull TextView heartRate) {
     this.rootView = rootView;
     this.backButton = backButton;
-    this.bpmText = bpmText;
     this.distanceIcon = distanceIcon;
     this.distanceText = distanceText;
     this.heartRate = heartRate;
@@ -80,12 +76,6 @@ public final class FragmentDistanceBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.bpm_text;
-      TextView bpmText = ViewBindings.findChildViewById(rootView, id);
-      if (bpmText == null) {
-        break missingId;
-      }
-
       id = R.id.distance_icon;
       ImageView distanceIcon = ViewBindings.findChildViewById(rootView, id);
       if (distanceIcon == null) {
@@ -104,7 +94,7 @@ public final class FragmentDistanceBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentDistanceBinding((LinearLayout) rootView, backButton, bpmText, distanceIcon,
+      return new FragmentDistanceBinding((LinearLayout) rootView, backButton, distanceIcon,
           distanceText, heartRate);
     }
     String missingId = rootView.getResources().getResourceName(id);

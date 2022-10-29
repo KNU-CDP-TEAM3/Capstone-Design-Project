@@ -1946,6 +1946,7 @@ drawable ic_keyboard_black_24dp
 drawable ic_lap
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_main_background
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2255,7 +2256,6 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
-id kmh_text
 id labeled
 id lap_text
 id laps
@@ -2732,6 +2732,9 @@ layout ws_single_page_nav_drawer_text
 layout ws_wearable_drawer_view
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ic_main
+mipmap ic_main_foreground
+mipmap ic_main_round
 navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

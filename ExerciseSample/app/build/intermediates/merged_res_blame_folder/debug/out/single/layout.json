@@ -1,42 +1,42 @@
 [
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_not_available.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_not_available.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_calories.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_calories.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_distance.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_distance.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_not_available.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_not_available.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_prepare.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_prepare.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_exercise.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_exercise.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_exercise.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_exercise.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_distance.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_distance.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_startup.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_startup.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_laps.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_laps.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_heartrate.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_heartrate.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_speed.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_speed.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_laps.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_laps.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_heartrate.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_heartrate.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_prepare.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_prepare.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_calories.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_calories.xml"
     },
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_speed.xml",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_speed.xml"
+        "merged": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_startup.xml",
+        "source": "/Users/imgwanghwan/project/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_startup.xml"
     }
 ]

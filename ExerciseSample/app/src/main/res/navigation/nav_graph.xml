@@ -43,6 +43,13 @@
     </fragment>
 
     <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="com.example.exercise.CaloriesFragment"
+        android:label="CaloriesFragment"
+        tools:layout="@layout/fragment_calories" >
+    </fragment>
+
+    <fragment
         android:id="@+id/speedFragment"
         android:name="com.example.exercise.SpeedFragment"
         android:label="SpeedFragment"

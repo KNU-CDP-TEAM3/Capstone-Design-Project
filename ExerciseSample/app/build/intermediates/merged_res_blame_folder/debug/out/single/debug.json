@@ -40,6 +40,10 @@
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_not_available.xml"
     },
     {
+        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_fragment_calories.xml.flat",
+        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_calories.xml"
+    },
+    {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_fragment_heartrate.xml.flat",
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_heartrate.xml"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/drawable_ic_heart.xml.flat",
+        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/drawable/ic_heart.xml"
     },
     {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",

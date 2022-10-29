@@ -205,7 +205,8 @@ public final class MainApplication_HiltComponents {
       modules = ViewWithFragmentCBuilderModule.class
   )
   @FragmentScoped
-  public abstract static class FragmentC implements DistanceFragment_GeneratedInjector,
+  public abstract static class FragmentC implements CaloriesFragment_GeneratedInjector,
+      DistanceFragment_GeneratedInjector,
       ExerciseFragment_GeneratedInjector,
       HeartrateFragment_GeneratedInjector,
       LapsFragment_GeneratedInjector,

@@ -36,6 +36,13 @@
     </fragment>
 
     <fragment
+        android:id="@+id/heartrateFragment"
+        android:name="com.example.exercise.HeartrateFragment"
+        android:label="HeartrateFragment"
+        tools:layout="@layout/fragment_heartrate" >
+    </fragment>
+
+    <fragment
         android:id="@+id/notAvailableFragment"
         android:name="com.example.exercise.NotAvailableFragment"
         android:label="NotAvailableFragment"

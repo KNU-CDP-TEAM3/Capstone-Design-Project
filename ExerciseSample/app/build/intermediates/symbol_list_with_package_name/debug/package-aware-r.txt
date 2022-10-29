@@ -1339,6 +1339,8 @@ color primary_dark_material_light
 color primary_material_dark
 color primary_material_light
 color primary_orange
+color primary_pink
+color primary_pinkorange
 color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
@@ -2096,6 +2098,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back_button
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2219,8 +2222,11 @@ id grouping
 id groups
 id guideline
 id header_title
+id heart2_icon
+id heart2_text
 id heart_rate_icon
 id heart_rate_text
+id heartrateFragment
 id height
 id hideable
 id home
@@ -2620,6 +2626,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_exercise
+layout fragment_heartrate
 layout fragment_not_available
 layout fragment_prepare
 layout fragment_startup

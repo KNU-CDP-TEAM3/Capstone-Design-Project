@@ -97,6 +97,14 @@ class ExerciseFragment : Fragment() {
             pauseResumeExercise()
         }
 
+        binding.heartRateText.setOnClickListener {
+            // App could take a perceptible amount of time to transition between states; put button into
+            // an intermediary "disabled" state to provide UI feedback.
+            it.isEnabled = false
+            findNavController().navigate(R.id.heartrateFragment)
+        }
+
+
         //코루틴인데 뭐하는거임
         //healt service에 capa 받아오고
         //지원하는 타입을 왜 받아옴

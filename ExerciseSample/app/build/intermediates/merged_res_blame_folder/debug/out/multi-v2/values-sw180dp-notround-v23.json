@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/iinseong/Desktop/Android/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw180dp-notround-v23/values-sw180dp-notround-v23.xml",
+            "outputFile": "/Users/imgwanghwan/android/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw180dp-notround-v23/values-sw180dp-notround-v23.xml",
             "map": [
                 {
-                    "source": "/Users/iinseong/.gradle/caches/transforms-3/f594d46ce5a851618862a07fee65a744/transformed/wear-1.2.0/res/values-sw180dp-notround-v23/values-sw180dp-notround-v23.xml",
+                    "source": "/Users/imgwanghwan/.gradle/caches/transforms-3/f594d46ce5a851618862a07fee65a744/transformed/wear-1.2.0/res/values-sw180dp-notround-v23/values-sw180dp-notround-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

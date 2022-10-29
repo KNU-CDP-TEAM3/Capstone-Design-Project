@@ -21,6 +21,7 @@
     <string name="last_measured">Last measured:</string>
     <string name="starting_up">Starting up</string>
     <string name="exercise_not_available">Exercise not available on this device</string>
+    <string name="x">X</string>
     <string name="start">START</string>
     <string name="end">END</string>
     <string name="pause">PAUSE</string>

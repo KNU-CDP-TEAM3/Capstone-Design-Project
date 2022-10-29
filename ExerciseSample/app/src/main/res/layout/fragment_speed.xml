@@ -61,20 +61,6 @@
                 tools:enabled="true"
                 tools:text="165" />
 
-            <TextView
-                android:id="@+id/kmh_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/space_4dp"
-                android:enabled="false"
-                android:gravity="center_vertical"
-                android:minHeight="18dp"
-                android:text="km/h"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                android:textSize="15sp"
-                tools:enabled="true"
-                tools:ignore="SmallSp"
-                tools:text="km/h" />
         </LinearLayout>
 
 

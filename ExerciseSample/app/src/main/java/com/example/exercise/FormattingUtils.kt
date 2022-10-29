@@ -70,9 +70,9 @@ fun formatCalories(calories: Double) = buildSpannedString {
 }
 
 fun formatSpeed(speed: Double) = buildSpannedString {
-    append("%02.2f".format(speed * 10))
+    append("%02.2f".format((speed * 3600) / 1000))
     inSpans(RelativeSizeSpan(UNITS_RELATIVE_SIZE)){
-        append(" km/s")
+        append(" km/h")
     }
 }
 

@@ -43,6 +43,20 @@
     </fragment>
 
     <fragment
+        android:id="@+id/speedFragment"
+        android:name="com.example.exercise.SpeedFragment"
+        android:label="SpeedFragment"
+        tools:layout="@layout/fragment_speed" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/lapsFragment"
+        android:name="com.example.exercise.LapsFragment"
+        android:label="LapsFragment"
+        tools:layout="@layout/fragment_laps" >
+    </fragment>
+
+    <fragment
         android:id="@+id/notAvailableFragment"
         android:name="com.example.exercise.NotAvailableFragment"
         android:label="NotAvailableFragment"

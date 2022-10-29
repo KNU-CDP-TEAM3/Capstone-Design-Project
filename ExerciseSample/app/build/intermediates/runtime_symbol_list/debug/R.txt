@@ -1915,6 +1915,7 @@ int drawable abc_vector_test 0x7f08005c
 int drawable avd_hide_password 0x7f08005d
 int drawable avd_show_password 0x7f08005e
 int drawable border 0x7f08005f
+int drawable border_round 0x7f0800b8
 int drawable btn_checkbox_checked_mtrl 0x7f080060
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f080061
 int drawable btn_checkbox_unchecked_mtrl 0x7f080062
@@ -2097,6 +2098,7 @@ int id auto 0x7f0a0054
 int id autoComplete 0x7f0a0055
 int id autoCompleteToEnd 0x7f0a0056
 int id autoCompleteToStart 0x7f0a0057
+int id back_Button 0x7f0a0212
 int id back_button 0x7f0a0058
 int id barrier 0x7f0a0059
 int id baseline 0x7f0a005a
@@ -2248,7 +2250,11 @@ int id italic 0x7f0a00eb
 int id item_touch_helper_previous_elevation 0x7f0a00ec
 int id jumpToEnd 0x7f0a00ed
 int id jumpToStart 0x7f0a00ee
+int id kmh_text 0x7f0a0213
 int id labeled 0x7f0a00ef
+int id lap_text 0x7f0a0214
+int id laps 0x7f0a0215
+int id lapsFragment 0x7f0a0219
 int id laps_icon 0x7f0a00f0
 int id laps_text 0x7f0a00f1
 int id layout 0x7f0a00f2
@@ -2417,6 +2423,8 @@ int id snapMargins 0x7f0a0194
 int id south 0x7f0a0195
 int id spacer 0x7f0a0196
 int id special_effects_controller_view_tag 0x7f0a0197
+int id speed 0x7f0a0216
+int id speedFragment 0x7f0a0217
 int id speed_icon 0x7f0a0198
 int id speed_text 0x7f0a0199
 int id spline 0x7f0a019a
@@ -2626,8 +2634,10 @@ int layout design_text_input_end_icon 0x7f0d002b
 int layout design_text_input_start_icon 0x7f0d002c
 int layout fragment_exercise 0x7f0d002d
 int layout fragment_heartrate 0x7f0d002e
+int layout fragment_laps 0x7f0d0086
 int layout fragment_not_available 0x7f0d002f
 int layout fragment_prepare 0x7f0d0030
+int layout fragment_speed 0x7f0d0087
 int layout fragment_startup 0x7f0d0031
 int layout material_chip_input_combo 0x7f0d0032
 int layout material_clock_display 0x7f0d0033
@@ -2846,6 +2856,7 @@ int string starting_up 0x7f11007d
 int string status_bar_notification_info_overflow 0x7f11007e
 int string ws_action_drawer_content_description 0x7f11007f
 int string ws_navigation_drawer_content_description 0x7f110080
+int string x 0x7f110081
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style AndroidThemeColorAccentYellow 0x7f120002

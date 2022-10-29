@@ -207,8 +207,10 @@ public final class MainApplication_HiltComponents {
   @FragmentScoped
   public abstract static class FragmentC implements ExerciseFragment_GeneratedInjector,
       HeartrateFragment_GeneratedInjector,
+      LapsFragment_GeneratedInjector,
       NotAvailableFragment_GeneratedInjector,
       PrepareFragment_GeneratedInjector,
+      SpeedFragment_GeneratedInjector,
       StartupFragment_GeneratedInjector,
       FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,

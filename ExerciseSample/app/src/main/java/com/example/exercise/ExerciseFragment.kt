@@ -104,11 +104,16 @@ class ExerciseFragment : Fragment() {
             findNavController().navigate(R.id.heartrateFragment)
         }
 
+        binding.speedText.setOnClickListener {
+            it.isEnabled = false
+            findNavController().navigate(R.id.speedFragment)
+        }
 
-        //코루틴인데 뭐하는거임
-        //healt service에 capa 받아오고
-        //지원하는 타입을 왜 받아옴
-        //각각의 text에 맞는 상태를 부여
+        binding.lapsText.setOnClickListener {
+            it.isEnabled = false
+            findNavController().navigate(R.id.lapsFragment)
+        }
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 val capabilities =
@@ -254,7 +259,7 @@ class ExerciseFragment : Fragment() {
         binding.pauseResumeButton.setText(if (state.isPaused) R.string.resume else R.string.pause)
         binding.pauseResumeButton.isEnabled = !state.isEnded
     }
-    //뭔가 심박수 나타내주는거 같은데
+
     private fun updateMetrics(data: Map<DataType, List<DataPoint>>) {
         data[DataType.HEART_RATE_BPM]?.let {
             binding.heartRateText.text = it.last().value.asDouble().roundToInt().toString()
@@ -264,7 +269,7 @@ class ExerciseFragment : Fragment() {
         }
     }
 
-    //aggregate한거
+
     private fun updateAggregateMetrics(data: Map<DataType, AggregateDataPoint>) {
         (data[DataType.DISTANCE] as? CumulativeDataPoint)?.let {
             binding.distanceText.text = formatDistanceKm(it.total.asDouble())

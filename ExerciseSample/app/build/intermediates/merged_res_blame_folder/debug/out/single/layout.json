@@ -12,6 +12,10 @@
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_exercise.xml"
     },
     {
+        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_distance.xml",
+        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_distance.xml"
+    },
+    {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_startup.xml",
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_startup.xml"
     },

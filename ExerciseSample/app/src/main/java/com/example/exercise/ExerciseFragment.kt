@@ -114,6 +114,12 @@ class ExerciseFragment : Fragment() {
             findNavController().navigate(R.id.lapsFragment)
         }
 
+        binding.distanceText.setOnClickListener {
+            it.isEnabled = false
+            findNavController().navigate(R.id.distanceFragment)
+        }
+
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 val capabilities =

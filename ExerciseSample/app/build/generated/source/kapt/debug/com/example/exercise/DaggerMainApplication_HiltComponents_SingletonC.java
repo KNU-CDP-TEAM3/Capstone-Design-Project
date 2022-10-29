@@ -349,6 +349,11 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
+    public void injectDistanceFragment(DistanceFragment distanceFragment) {
+      injectDistanceFragment2(distanceFragment);
+    }
+
+    @Override
     public void injectExerciseFragment(ExerciseFragment arg0) {
       injectExerciseFragment2(arg0);
     }
@@ -359,8 +364,8 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectLapsFragment(LapsFragment lapsFragment) {
-      injectLapsFragment2(lapsFragment);
+    public void injectLapsFragment(LapsFragment arg0) {
+      injectLapsFragment2(arg0);
     }
 
     @Override
@@ -389,6 +394,12 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     @Override
     public ViewWithFragmentComponentBuilder viewWithFragmentComponentBuilder() {
       return new ViewWithFragmentCBuilder(singletonC, activityRetainedCImpl, activityCImpl, fragmentCImpl);
+    }
+
+    @CanIgnoreReturnValue
+    private DistanceFragment injectDistanceFragment2(DistanceFragment instance) {
+      DistanceFragment_MembersInjector.injectHealthServicesManager(instance, healthServicesManager());
+      return instance;
     }
 
     @CanIgnoreReturnValue

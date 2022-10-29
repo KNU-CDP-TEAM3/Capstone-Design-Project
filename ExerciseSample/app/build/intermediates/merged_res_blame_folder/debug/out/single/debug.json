@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_fragment_laps.xml.flat",
-        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_laps.xml"
-    },
-    {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/navigation_nav_graph.xml.flat",
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_fragment_laps.xml.flat",
+        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_laps.xml"
     },
     {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/drawable_border.xml.flat",
@@ -22,6 +22,10 @@
     {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/drawable_ic_run.xml.flat",
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/drawable/ic_run.xml"
+    },
+    {
+        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_fragment_distance.xml.flat",
+        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_distance.xml"
     },
     {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_fragment_exercise.xml.flat",

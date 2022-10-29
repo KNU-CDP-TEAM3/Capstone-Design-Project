@@ -66,7 +66,6 @@ class HeartrateFragment : Fragment() {
 
     private var cachedExerciseState = ExerciseState.USER_ENDED
     private var activeDurationUpdate = ActiveDurationUpdate()
-    private var chronoTickJob: Job? = null
     private var uiBindingJob: Job? = null
 
     private lateinit var ambientController: AmbientModeSupport.AmbientController
@@ -100,7 +99,7 @@ class HeartrateFragment : Fragment() {
 
                 // Set enabled state for relevant text elements.
                 // heartRateText -> heart2Text
-                binding.heart2Text.isEnabled = DataType.HEART_RATE_BPM in supportedTypes
+                binding.heartRateText.isEnabled = DataType.HEART_RATE_BPM in supportedTypes
             }
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.keyPressFlow.collect {
@@ -188,7 +187,7 @@ class HeartrateFragment : Fragment() {
     private fun updateMetrics(data: Map<DataType, List<DataPoint>>) {
         // heartRateText -> heart2Text
         data[DataType.HEART_RATE_BPM]?.let {
-            binding.heart2Text.text = it.last().value.asDouble().roundToInt().toString()
+            binding.heartRateText.text = it.last().value.asDouble().roundToInt().toString()
         }
     }
 
@@ -201,7 +200,7 @@ class HeartrateFragment : Fragment() {
         }
         // heartRateIcon -> heart2Icon
         ColorStateList.valueOf(iconTint).let {
-            binding.heart2Icon.imageTintList = it
+            binding.heartRateIcon.imageTintList = it
         }
     }
 

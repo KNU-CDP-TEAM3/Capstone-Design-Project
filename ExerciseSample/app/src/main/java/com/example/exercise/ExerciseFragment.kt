@@ -119,6 +119,11 @@ class ExerciseFragment : Fragment() {
             findNavController().navigate(R.id.distanceFragment)
         }
 
+        binding.caloriesText.setOnClickListener {
+            it.isEnabled = false
+            findNavController().navigate(R.id.caloriesFragment)
+        }
+
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {

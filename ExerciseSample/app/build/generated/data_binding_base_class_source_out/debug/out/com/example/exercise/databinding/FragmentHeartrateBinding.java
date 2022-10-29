@@ -25,17 +25,26 @@ public final class FragmentHeartrateBinding implements ViewBinding {
   public final Button backButton;
 
   @NonNull
-  public final ImageView heart2Icon;
+  public final TextView bpmText;
 
   @NonNull
-  public final TextView heart2Text;
+  public final TextView heartRate;
+
+  @NonNull
+  public final ImageView heartRateIcon;
+
+  @NonNull
+  public final TextView heartRateText;
 
   private FragmentHeartrateBinding(@NonNull LinearLayout rootView, @NonNull Button backButton,
-      @NonNull ImageView heart2Icon, @NonNull TextView heart2Text) {
+      @NonNull TextView bpmText, @NonNull TextView heartRate, @NonNull ImageView heartRateIcon,
+      @NonNull TextView heartRateText) {
     this.rootView = rootView;
     this.backButton = backButton;
-    this.heart2Icon = heart2Icon;
-    this.heart2Text = heart2Text;
+    this.bpmText = bpmText;
+    this.heartRate = heartRate;
+    this.heartRateIcon = heartRateIcon;
+    this.heartRateText = heartRateText;
   }
 
   @Override
@@ -71,20 +80,32 @@ public final class FragmentHeartrateBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.heart2_icon;
-      ImageView heart2Icon = ViewBindings.findChildViewById(rootView, id);
-      if (heart2Icon == null) {
+      id = R.id.bpm_text;
+      TextView bpmText = ViewBindings.findChildViewById(rootView, id);
+      if (bpmText == null) {
         break missingId;
       }
 
-      id = R.id.heart2_text;
-      TextView heart2Text = ViewBindings.findChildViewById(rootView, id);
-      if (heart2Text == null) {
+      id = R.id.heart_rate;
+      TextView heartRate = ViewBindings.findChildViewById(rootView, id);
+      if (heartRate == null) {
         break missingId;
       }
 
-      return new FragmentHeartrateBinding((LinearLayout) rootView, backButton, heart2Icon,
-          heart2Text);
+      id = R.id.heart_rate_icon;
+      ImageView heartRateIcon = ViewBindings.findChildViewById(rootView, id);
+      if (heartRateIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.heart_rate_text;
+      TextView heartRateText = ViewBindings.findChildViewById(rootView, id);
+      if (heartRateText == null) {
+        break missingId;
+      }
+
+      return new FragmentHeartrateBinding((LinearLayout) rootView, backButton, bpmText, heartRate,
+          heartRateIcon, heartRateText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1939,6 +1939,7 @@ int drawable ic_check 0x7f080073
 int drawable ic_clock 0x7f080074
 int drawable ic_clock_black_24dp 0x7f080075
 int drawable ic_distance 0x7f080076
+int drawable ic_heart 0x7f0800b9
 int drawable ic_heart_outline 0x7f080077
 int drawable ic_keyboard_black_24dp 0x7f080078
 int drawable ic_lap 0x7f080079
@@ -2116,6 +2117,8 @@ int id bpm_text 0x7f0a021a
 int id butt 0x7f0a0065
 int id buttonPanel 0x7f0a0066
 int id cache_measures 0x7f0a0067
+int id caloriesFragment 0x7f0a021d
+int id calories_burned 0x7f0a021e
 int id calories_icon 0x7f0a0068
 int id calories_text 0x7f0a0069
 int id cancel_button 0x7f0a006a
@@ -2225,8 +2228,6 @@ int id grouping 0x7f0a00d0
 int id groups 0x7f0a00d1
 int id guideline 0x7f0a00d2
 int id header_title 0x7f0a00d3
-int id heart2_icon 0x7f0a00d4
-int id heart2_text 0x7f0a00d5
 int id heart_rate 0x7f0a021c
 int id heart_rate_icon 0x7f0a00d6
 int id heart_rate_text 0x7f0a00d7
@@ -2635,6 +2636,7 @@ int layout design_navigation_menu 0x7f0d0029
 int layout design_navigation_menu_item 0x7f0d002a
 int layout design_text_input_end_icon 0x7f0d002b
 int layout design_text_input_start_icon 0x7f0d002c
+int layout fragment_calories 0x7f0d0089
 int layout fragment_distance 0x7f0d0088
 int layout fragment_exercise 0x7f0d002d
 int layout fragment_heartrate 0x7f0d002e

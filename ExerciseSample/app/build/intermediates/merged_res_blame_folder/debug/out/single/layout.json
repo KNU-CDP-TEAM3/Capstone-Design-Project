@@ -4,6 +4,10 @@
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/activity_main.xml"
     },
     {
+        "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_calories.xml",
+        "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_calories.xml"
+    },
+    {
         "merged": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_not_available.xml",
         "source": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_not_available.xml"
     },

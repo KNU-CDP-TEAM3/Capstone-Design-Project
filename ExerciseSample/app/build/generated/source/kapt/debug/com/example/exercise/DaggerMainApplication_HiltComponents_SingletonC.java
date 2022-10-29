@@ -349,6 +349,11 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
+    public void injectCaloriesFragment(CaloriesFragment caloriesFragment) {
+      injectCaloriesFragment2(caloriesFragment);
+    }
+
+    @Override
     public void injectExerciseFragment(ExerciseFragment arg0) {
       injectExerciseFragment2(arg0);
     }
@@ -379,6 +384,12 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     @Override
     public ViewWithFragmentComponentBuilder viewWithFragmentComponentBuilder() {
       return new ViewWithFragmentCBuilder(singletonC, activityRetainedCImpl, activityCImpl, fragmentCImpl);
+    }
+
+    @CanIgnoreReturnValue
+    private CaloriesFragment injectCaloriesFragment2(CaloriesFragment instance) {
+      CaloriesFragment_MembersInjector.injectHealthServicesManager(instance, healthServicesManager());
+      return instance;
     }
 
     @CanIgnoreReturnValue

@@ -2112,6 +2112,7 @@ id bounceStart
 id butt
 id buttonPanel
 id cache_measures
+id caloriesFragment
 id calories_icon
 id calories_text
 id cancel_button
@@ -2624,6 +2625,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_calories
 layout fragment_exercise
 layout fragment_not_available
 layout fragment_prepare

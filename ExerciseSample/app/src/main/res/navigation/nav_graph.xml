@@ -47,6 +47,11 @@
         android:label="HeartFragment"
         tools:layout="@layout/clicked_button" />
 
+    <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="com.example.exercise.CaloriesFragment"
+        android:label="CaloriesFragment"
+        tools:layout="@layout/fragment_calories" />
 
     <fragment
         android:id="@+id/exerciseFragment"
@@ -63,4 +68,5 @@
         android:name="com.example.exercise.NewExerciseConfirmationFragment"
         android:label="NewExerciseConfirmationFragment"
         tools:layout="@layout/fragment_new_exercise_confirmation" />
+
 </navigation>

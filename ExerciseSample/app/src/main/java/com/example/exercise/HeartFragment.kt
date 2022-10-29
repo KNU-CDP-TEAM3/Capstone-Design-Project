@@ -49,7 +49,6 @@ class HeartFragment : Fragment() {
 
     private var cachedExerciseState = ExerciseState.USER_ENDED
     private var activeDurationUpdate = ActiveDurationUpdate()
-    private var chronoTickJob: Job? = null
     private var uiBindingJob: Job? = null
 
     private lateinit var ambientController: AmbientModeSupport.AmbientController
@@ -157,14 +156,9 @@ class HeartFragment : Fragment() {
         }
     }
 
-    //뭔가 심박수 나타내주는거 같은데
     private fun updateMetrics(data: Map<DataType, List<DataPoint>>) {
         data[DataType.HEART_RATE_BPM]?.let {
             binding.testheart.text = it.last().value.asDouble().roundToInt().toString()
         }
     }
-
-    // -- Ambient Mode support
-    //UI 관련..? -> 이미지 쓴게 아니라 그냥 자체 제작
-
 }

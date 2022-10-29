@@ -5,7 +5,8 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27986348122866894" />
         <entry key="app/src/main/res/layout/clicked_button.xml" value="0.2738052368164063" />
-        <entry key="app/src/main/res/layout/fragment_exercise.xml" value="0.6839218139648439" />
+        <entry key="app/src/main/res/layout/fragment_calories.xml" value="0.6189427312775331" />
+        <entry key="app/src/main/res/layout/fragment_exercise.xml" value="0.4083694083694084" />
         <entry key="app/src/main/res/layout/fragment_not_available.xml" value="0.7555066079295154" />
         <entry key="app/src/main/res/layout/fragment_prepare.xml" value="0.6353900540259577" />
       </map>

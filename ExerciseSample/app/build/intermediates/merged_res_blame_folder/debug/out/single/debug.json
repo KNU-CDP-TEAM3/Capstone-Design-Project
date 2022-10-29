@@ -56,6 +56,10 @@
         "source": "/Users/imgwanghwan/android/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/clicked_button.xml"
     },
     {
+        "merged": "/Users/imgwanghwan/android/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_fragment_calories.xml.flat",
+        "source": "/Users/imgwanghwan/android/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_calories.xml"
+    },
+    {
         "merged": "/Users/imgwanghwan/android/Capstone-Design-Project/ExerciseSample/app/build/intermediates/merged_res/debug/layout_fragment_startup.xml.flat",
         "source": "/Users/imgwanghwan/android/Capstone-Design-Project/ExerciseSample/app/src/main/res/layout/fragment_startup.xml"
     },

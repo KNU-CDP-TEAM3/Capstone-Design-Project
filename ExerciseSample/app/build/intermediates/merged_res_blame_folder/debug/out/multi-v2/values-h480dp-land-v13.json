@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/imgwanghwan/android/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "/Users/iinseong/Desktop/androro/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/imgwanghwan/.gradle/caches/transforms-3/f3c3c318cfd360ec046192512a44de8b/transformed/material-1.4.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+                    "source": "/Users/iinseong/.gradle/caches/transforms-3/f3c3c318cfd360ec046192512a44de8b/transformed/material-1.4.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

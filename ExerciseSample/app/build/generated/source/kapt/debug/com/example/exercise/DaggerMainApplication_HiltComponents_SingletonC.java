@@ -349,26 +349,36 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectExerciseFragment(ExerciseFragment exerciseFragment) {
-      injectExerciseFragment2(exerciseFragment);
+    public void injectExerciseFragment(ExerciseFragment arg0) {
+      injectExerciseFragment2(arg0);
     }
 
     @Override
-    public void injectHeartrateFragment(HeartrateFragment heartrateFragment) {
-      injectHeartrateFragment2(heartrateFragment);
+    public void injectHeartrateFragment(HeartrateFragment arg0) {
+      injectHeartrateFragment2(arg0);
     }
 
     @Override
-    public void injectNotAvailableFragment(NotAvailableFragment notAvailableFragment) {
+    public void injectLapsFragment(LapsFragment lapsFragment) {
+      injectLapsFragment2(lapsFragment);
     }
 
     @Override
-    public void injectPrepareFragment(PrepareFragment prepareFragment) {
+    public void injectNotAvailableFragment(NotAvailableFragment arg0) {
     }
 
     @Override
-    public void injectStartupFragment(StartupFragment startupFragment) {
-      injectStartupFragment2(startupFragment);
+    public void injectPrepareFragment(PrepareFragment arg0) {
+    }
+
+    @Override
+    public void injectSpeedFragment(SpeedFragment arg0) {
+      injectSpeedFragment2(arg0);
+    }
+
+    @Override
+    public void injectStartupFragment(StartupFragment arg0) {
+      injectStartupFragment2(arg0);
     }
 
     @Override
@@ -390,6 +400,18 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     @CanIgnoreReturnValue
     private HeartrateFragment injectHeartrateFragment2(HeartrateFragment instance) {
       HeartrateFragment_MembersInjector.injectHealthServicesManager(instance, healthServicesManager());
+      return instance;
+    }
+
+    @CanIgnoreReturnValue
+    private LapsFragment injectLapsFragment2(LapsFragment instance) {
+      LapsFragment_MembersInjector.injectHealthServicesManager(instance, healthServicesManager());
+      return instance;
+    }
+
+    @CanIgnoreReturnValue
+    private SpeedFragment injectSpeedFragment2(SpeedFragment instance) {
+      SpeedFragment_MembersInjector.injectHealthServicesManager(instance, healthServicesManager());
       return instance;
     }
 
@@ -435,7 +457,7 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectMainActivity(MainActivity mainActivity) {
+    public void injectMainActivity(MainActivity arg0) {
     }
 
     @Override
@@ -596,8 +618,8 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectExerciseService(ExerciseService exerciseService) {
-      injectExerciseService2(exerciseService);
+    public void injectExerciseService(ExerciseService arg0) {
+      injectExerciseService2(arg0);
     }
 
     @CanIgnoreReturnValue

@@ -57,6 +57,13 @@
     </fragment>
 
     <fragment
+        android:id="@+id/distanceFragment"
+        android:name="com.example.exercise.DistanceFragment"
+        android:label="DistanceFragment"
+        tools:layout="@layout/fragment_distance" >
+    </fragment>
+
+    <fragment
         android:id="@+id/notAvailableFragment"
         android:name="com.example.exercise.NotAvailableFragment"
         android:label="NotAvailableFragment"

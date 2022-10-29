@@ -2112,6 +2112,7 @@ int id bounce 0x7f0a0061
 int id bounceBoth 0x7f0a0062
 int id bounceEnd 0x7f0a0063
 int id bounceStart 0x7f0a0064
+int id bpm_text 0x7f0a021a
 int id butt 0x7f0a0065
 int id buttonPanel 0x7f0a0066
 int id cache_measures 0x7f0a0067
@@ -2174,6 +2175,7 @@ int id disableIntraAutoTransition 0x7f0a009f
 int id disablePostScroll 0x7f0a00a0
 int id disableScroll 0x7f0a00a1
 int id disjoint 0x7f0a00a2
+int id distanceFragment 0x7f0a021b
 int id distance_icon 0x7f0a00a3
 int id distance_text 0x7f0a00a4
 int id dragAnticlockwise 0x7f0a00a5
@@ -2225,6 +2227,7 @@ int id guideline 0x7f0a00d2
 int id header_title 0x7f0a00d3
 int id heart2_icon 0x7f0a00d4
 int id heart2_text 0x7f0a00d5
+int id heart_rate 0x7f0a021c
 int id heart_rate_icon 0x7f0a00d6
 int id heart_rate_text 0x7f0a00d7
 int id heartrateFragment 0x7f0a00d8
@@ -2632,6 +2635,7 @@ int layout design_navigation_menu 0x7f0d0029
 int layout design_navigation_menu_item 0x7f0d002a
 int layout design_text_input_end_icon 0x7f0d002b
 int layout design_text_input_start_icon 0x7f0d002c
+int layout fragment_distance 0x7f0d0088
 int layout fragment_exercise 0x7f0d002d
 int layout fragment_heartrate 0x7f0d002e
 int layout fragment_laps 0x7f0d0086

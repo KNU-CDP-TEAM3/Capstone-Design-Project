@@ -349,8 +349,13 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectExerciseFragment(ExerciseFragment exerciseFragment) {
-      injectExerciseFragment2(exerciseFragment);
+    public void injectExerciseFragment(ExerciseFragment arg0) {
+      injectExerciseFragment2(arg0);
+    }
+
+    @Override
+    public void injectHeartFragment(HeartFragment heartFragment) {
+      injectHeartFragment2(heartFragment);
     }
 
     @Override
@@ -379,6 +384,12 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     @CanIgnoreReturnValue
     private ExerciseFragment injectExerciseFragment2(ExerciseFragment instance) {
       ExerciseFragment_MembersInjector.injectHealthServicesManager(instance, healthServicesManager());
+      return instance;
+    }
+
+    @CanIgnoreReturnValue
+    private HeartFragment injectHeartFragment2(HeartFragment instance) {
+      HeartFragment_MembersInjector.injectHealthServicesManager(instance, healthServicesManager());
       return instance;
     }
 

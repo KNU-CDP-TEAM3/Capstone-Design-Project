@@ -89,6 +89,7 @@ class ExerciseFragment : Fragment() {
             it.isEnabled = false
             startEndExercise()
         }
+
         // pause 와 resume
         binding.pauseResumeButton.setOnClickListener {
             // App could take a perceptible amount of time to transition between states; put button into
@@ -96,6 +97,13 @@ class ExerciseFragment : Fragment() {
             it.isEnabled = false
             pauseResumeExercise()
         }
+
+        binding.heartRateText.setOnClickListener {
+            it.isEnabled = false
+            findNavController().navigate(R.id.heartFragment)
+
+        }
+
 
         //코루틴인데 뭐하는거임
         //healt service에 capa 받아오고
@@ -112,8 +120,6 @@ class ExerciseFragment : Fragment() {
                 binding.caloriesText.isEnabled = DataType.TOTAL_CALORIES in supportedTypes
                 binding.distanceText.isEnabled = DataType.DISTANCE in supportedTypes
                 binding.speedText.isEnabled = DataType.SPEED in supportedTypes
-
-
                 binding.lapsText.isEnabled = true
             }
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {

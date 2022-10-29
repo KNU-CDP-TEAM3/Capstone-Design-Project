@@ -2096,6 +2096,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backbtn
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2219,6 +2220,7 @@ id grouping
 id groups
 id guideline
 id header_title
+id heartFragment
 id heart_rate_icon
 id heart_rate_text
 id height
@@ -2456,6 +2458,8 @@ id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
+id testheart
+id testheartimg
 id text
 id text2
 id textEnd
@@ -2603,6 +2607,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout clicked_button
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

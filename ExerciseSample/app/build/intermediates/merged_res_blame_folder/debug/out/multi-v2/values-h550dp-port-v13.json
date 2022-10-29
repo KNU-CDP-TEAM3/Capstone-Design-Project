@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/iinseong/Desktop/Android/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "/Users/imgwanghwan/android/Capstone-Design-Project/ExerciseSample/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/iinseong/.gradle/caches/transforms-3/f3c3c318cfd360ec046192512a44de8b/transformed/material-1.4.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "/Users/imgwanghwan/.gradle/caches/transforms-3/f3c3c318cfd360ec046192512a44de8b/transformed/material-1.4.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

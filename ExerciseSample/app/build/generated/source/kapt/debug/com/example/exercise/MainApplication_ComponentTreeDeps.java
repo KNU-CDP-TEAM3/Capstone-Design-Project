@@ -20,6 +20,7 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_compo
 import hilt_aggregated_deps._androidx_hilt_work_HiltWrapper_WorkerFactoryModule;
 import hilt_aggregated_deps._com_example_exercise_ExerciseFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_example_exercise_ExerciseService_GeneratedInjector;
+import hilt_aggregated_deps._com_example_exercise_HeartFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_example_exercise_MainActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_example_exercise_MainApplication_GeneratedInjector;
 import hilt_aggregated_deps._com_example_exercise_MainModule;
@@ -89,9 +90,10 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _com_example_exercise_MainViewModel_HiltModules_KeyModule.class,
         _com_example_exercise_ExerciseService_GeneratedInjector.class,
         _com_example_exercise_StartupFragment_GeneratedInjector.class,
+        _com_example_exercise_ExerciseFragment_GeneratedInjector.class,
         _com_example_exercise_MainViewModel_HiltModules_BindsModule.class,
         _com_example_exercise_MainApplication_GeneratedInjector.class,
-        _com_example_exercise_ExerciseFragment_GeneratedInjector.class
+        _com_example_exercise_HeartFragment_GeneratedInjector.class
     }
 )
 class MainApplication_ComponentTreeDeps {

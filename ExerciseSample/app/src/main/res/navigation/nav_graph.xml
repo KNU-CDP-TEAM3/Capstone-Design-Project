@@ -42,6 +42,13 @@
         tools:layout="@layout/fragment_not_available" />
 
     <fragment
+        android:id="@+id/heartFragment"
+        android:name="com.example.exercise.HeartFragment"
+        android:label="HeartFragment"
+        tools:layout="@layout/clicked_button" />
+
+
+    <fragment
         android:id="@+id/exerciseFragment"
         android:name="com.example.exercise.ExerciseFragment"
         android:label="ExerciseFragment"

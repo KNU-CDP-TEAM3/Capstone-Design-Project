@@ -69,7 +69,7 @@ Click on each data item to view one piece of information at a time.
 While an exercise is in progress, if you leave the app, an ongoing notification appears, offering
 quick return to the exercise screen.
 
-![ongoing notification screenshot](ExerciseSample/screenshots/on_going.png)
+![ongoing notification screenshot](ExerciseSample/screenshots/app_ongoing.png)
 
 On devices where the exercise capability is not available, you will see a screen like this:
 

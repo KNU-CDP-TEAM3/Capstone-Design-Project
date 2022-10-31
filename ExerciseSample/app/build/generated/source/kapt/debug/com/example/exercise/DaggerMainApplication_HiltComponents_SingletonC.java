@@ -349,28 +349,28 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectCaloriesFragment(CaloriesFragment arg0) {
-      injectCaloriesFragment2(arg0);
+    public void injectCaloriesFragment(CaloriesFragment caloriesFragment) {
+      injectCaloriesFragment2(caloriesFragment);
     }
 
     @Override
-    public void injectDistanceFragment(DistanceFragment arg0) {
-      injectDistanceFragment2(arg0);
+    public void injectDistanceFragment(DistanceFragment distanceFragment) {
+      injectDistanceFragment2(distanceFragment);
     }
 
     @Override
-    public void injectExerciseFragment(ExerciseFragment arg0) {
-      injectExerciseFragment2(arg0);
+    public void injectExerciseFragment(ExerciseFragment exerciseFragment) {
+      injectExerciseFragment2(exerciseFragment);
     }
 
     @Override
-    public void injectHeartrateFragment(HeartrateFragment arg0) {
-      injectHeartrateFragment2(arg0);
+    public void injectHeartrateFragment(HeartrateFragment heartrateFragment) {
+      injectHeartrateFragment2(heartrateFragment);
     }
 
     @Override
-    public void injectLapsFragment(LapsFragment arg0) {
-      injectLapsFragment2(arg0);
+    public void injectLapsFragment(LapsFragment lapsFragment) {
+      injectLapsFragment2(lapsFragment);
     }
 
     @Override
@@ -387,8 +387,8 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectStartupFragment(StartupFragment arg0) {
-      injectStartupFragment2(arg0);
+    public void injectStartupFragment(StartupFragment startupFragment) {
+      injectStartupFragment2(startupFragment);
     }
 
     @Override
@@ -640,8 +640,8 @@ public final class DaggerMainApplication_HiltComponents_SingletonC extends MainA
     }
 
     @Override
-    public void injectExerciseService(ExerciseService arg0) {
-      injectExerciseService2(arg0);
+    public void injectExerciseService(ExerciseService exerciseService) {
+      injectExerciseService2(exerciseService);
     }
 
     @CanIgnoreReturnValue

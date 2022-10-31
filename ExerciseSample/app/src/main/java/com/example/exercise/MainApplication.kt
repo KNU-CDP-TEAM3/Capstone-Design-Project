@@ -22,7 +22,6 @@ import dagger.hilt.android.HiltAndroidApp
 /**
  * Application class, needed to enable dependency injection with Hilt.
  */
-//그냥 메인임
 @HiltAndroidApp
 class MainApplication : Application()
 

@@ -30,7 +30,7 @@ import kotlinx.coroutines.CoroutineScope
  * coroutines bound to its lifecycle. When the service is connected, the lifecycle will be
  * [Lifecycle.State.STARTED]; otherwise it will be [Lifecycle.State.INITIALIZED].
  */
-//건들거 없을거 같은데..
+
 class ExerciseServiceConnection : ServiceConnection, LifecycleOwner {
 
     var exerciseService: ExerciseService? = null

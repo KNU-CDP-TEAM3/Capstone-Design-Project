@@ -159,7 +159,7 @@ class ExerciseFragment : Fragment() {
         ExerciseService.unbindService(requireContext().applicationContext, serviceConnection)
         _binding = null
     }
-    //버튼 누른거 listener로 감지해서, 이런 함수 실행한다~
+
     private fun startEndExercise() {
         if (cachedExerciseState.isEnded) {
             tryStartExercise()
@@ -193,7 +193,7 @@ class ExerciseFragment : Fragment() {
             service.pauseExercise()
         }
     }
-    //코루틴 돌리기
+
     private fun bindViewsToService() {
         if (uiBindingJob != null) return
 
@@ -236,7 +236,7 @@ class ExerciseFragment : Fragment() {
         uiBindingJob?.cancel()
         uiBindingJob = null
     }
-    //update
+
     private fun updateExerciseStatus(state: ExerciseState) {
         val previousStatus = cachedExerciseState
         if (previousStatus.isEnded && !state.isEnded) {
@@ -283,7 +283,7 @@ class ExerciseFragment : Fragment() {
     private fun updateLaps(laps: Int) {
         binding.lapsText.text = laps.toString()
     }
-    //시간 재는거?
+
     private fun startChronometer() {
         if (chronoTickJob == null) {
             chronoTickJob = viewLifecycleOwner.lifecycleScope.launch {
@@ -314,7 +314,7 @@ class ExerciseFragment : Fragment() {
         val duration = activeDurationUpdate.duration + difference
         binding.elapsedTime.text = formatElapsedTime(duration, !ambientController.isAmbient)
     }
-    //초기화
+
     private fun resetDisplayedFields() {
         getString(R.string.empty_metric).let {
             binding.heartRateText.text = it
@@ -327,7 +327,6 @@ class ExerciseFragment : Fragment() {
     }
 
     // -- Ambient Mode support
-    //UI 관련..? -> 이미지 쓴게 아니라 그냥 자체 제작
     private fun setAmbientUiState(isAmbient: Boolean) {
         // Change icons to white while in ambient mode.
         val iconTint = if (isAmbient) {
@@ -351,7 +350,7 @@ class ExerciseFragment : Fragment() {
             binding.pauseResumeButton.visibility = it
         }
     }
-    //업데이트 다 해주는곳?
+
     private fun performOneTimeUiUpdate() {
         val service = checkNotNull(serviceConnection.exerciseService) {
             "Failed to achieve ExerciseService instance"

@@ -16,37 +16,25 @@
 
 package com.example.exercise
 
-import android.content.res.ColorStateList
-import android.graphics.Color
+
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.health.services.client.data.AggregateDataPoint
-import androidx.health.services.client.data.CumulativeDataPoint
-import androidx.health.services.client.data.DataPoint
-import androidx.health.services.client.data.DataType
 import androidx.health.services.client.data.ExerciseState
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import androidx.wear.ambient.AmbientModeSupport
-import com.example.exercise.databinding.FragmentExerciseBinding
-import com.example.exercise.databinding.FragmentHeartrateBinding
 import com.example.exercise.databinding.FragmentLapsBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import java.time.Duration
-import java.time.Instant
 import javax.inject.Inject
-import kotlin.math.roundToInt
+
 
 /**
  * Fragment showing the exercise controls and current exercise metrics.
@@ -111,29 +99,6 @@ class LapsFragment : Fragment() {
         // Unbind from the service.
         ExerciseService.unbindService(requireContext().applicationContext, serviceConnection)
         _binding = null
-    }
-
-    private fun startEndExercise() {
-        if (cachedExerciseState.isEnded) {
-            tryStartExercise()
-        } else {
-            checkNotNull(serviceConnection.exerciseService) {
-                "Failed to achieve ExerciseService instance"
-            }.endExercise()
-        }
-    }
-
-    private fun tryStartExercise() {
-        viewLifecycleOwner.lifecycleScope.launch {
-            if (healthServicesManager.isTrackingExerciseInAnotherApp()) {
-                // Show the user a confirmation screen.
-                findNavController().navigate(R.id.to_newExerciseConfirmation)
-            } else if (!healthServicesManager.isExerciseInProgress()) {
-                checkNotNull(serviceConnection.exerciseService) {
-                    "Failed to achieve ExerciseService instance"
-                }.startExercise()
-            }
-        }
     }
 
     private fun bindViewsToService() {

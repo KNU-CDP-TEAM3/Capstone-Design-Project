@@ -28,11 +28,7 @@ import javax.inject.Inject
 /**
  * Coordinates messages between [MainActivity] and [ExerciseFragment].
  */
-//ViewModel 클래스는 수명 주기를 고려하여 UI 관련 데이터를 저장하고 관리하도록 설계되었습니다.
-// ViewModel 클래스를 사용하면 화면 회전과 같이 구성을 변경할 때도 데이터를 유지할 수 있습니다.
 
-//ambientEvent 이건 뭔지
-// key press channel -> key 입력 시 발생?
 @HiltViewModel
 class MainViewModel @Inject constructor() : ViewModel() {
 

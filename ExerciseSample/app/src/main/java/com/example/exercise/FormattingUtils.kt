@@ -31,7 +31,6 @@ private val SECONDS_PER_MINUTE = TimeUnit.MINUTES.toSeconds(1)
  * Format an elapsed duration as `01m01s`. Hours are shown if present, e.g. `1h01m01s`. If
  * [includeSeconds] is `false`, seconds are omitted, e.g. `01m` or `1h01m`.
  */
-//지난 시간 .
 fun formatElapsedTime(elapsedDuration: Duration, includeSeconds: Boolean) = buildSpannedString {
     val hours = elapsedDuration.toHours()
     if (hours > 0) {
@@ -53,7 +52,6 @@ fun formatElapsedTime(elapsedDuration: Duration, includeSeconds: Boolean) = buil
         }
     }
 }
-//거리
 /** Format a distance to two decimals with a "km" suffix. */
 fun formatDistanceKm(meters: Double) = buildSpannedString {
     append("%02.2f".format(meters / 1_000))
@@ -61,7 +59,7 @@ fun formatDistanceKm(meters: Double) = buildSpannedString {
         append("km")
     }
 }
-//칼로리리/** Format calories burned to an integer with a "cal" suffix. */
+
 fun formatCalories(calories: Double) = buildSpannedString {
     append(calories.roundToInt().toString())
     inSpans(RelativeSizeSpan(UNITS_RELATIVE_SIZE)) {
@@ -73,20 +71,5 @@ fun formatSpeed(speed: Double) = buildSpannedString {
     append("%02.2f".format((speed * 3600) / 1000))
     inSpans(RelativeSizeSpan(UNITS_RELATIVE_SIZE)){
         append(" km/h")
-    }
-}
-
-
-fun formatSp02(spO2: Long) = buildSpannedString {
-    append("%02.2f".format(spO2))
-    inSpans(RelativeSizeSpan(UNITS_RELATIVE_SIZE)){
-        append(" %")
-    }
-}
-
-fun forma(spO2: Long) = buildSpannedString {
-    append("%02.2f".format(spO2))
-    inSpans(RelativeSizeSpan(UNITS_RELATIVE_SIZE)){
-        append(" %")
     }
 }

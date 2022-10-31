@@ -42,8 +42,8 @@ Press the START button when the confirmation is complete.
 
 If the necessary exercise capabilities are available, you will see a screen like this:
 
-![exercise available screenshot](ExerciseSamplescreenshots/exe.png)
-![exercise available screenshot](ExerciseSamplescreenshots/exe_start_pause.png)
+![exercise available screenshot](ExerciseSample/screenshots/exe.png)
+![exercise available screenshot](ExerciseSample/screenshots/exe_start_pause.png)
 
 When you press start, the app configures a running exercise and starts it. (You may need to use the
 [synthetic data provider](#using-synthetic-data) so that Health Services doesn't immediately pause
@@ -51,29 +51,29 @@ the exercise due to no user activity.) While the exercise is active, the UI will
 duration, heart rate bpm, calories burned, distance traveled, the number of laps and the speed. To mark a lap,
 press one of the hardware buttons around the watch frame.
 
-![exercise in progress screenshot](ExerciseSamplescreenshots/in_progress.png)
-![exercise in progress screenshot](ExerciseSamplescreenshots/in_progress2.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/in_progress.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/in_progress2.png)
 
 Click on each data item to view one piece of information at a time.
 
-![exercise in progress screenshot](ExerciseSamplescreenshots/exercise_heart.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exercise_heart.png)
 
-![exercise in progress screenshot](ExerciseSamplescreenshots/exercise_cal.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exercise_cal.png)
 
-![exercise in progress screenshot](ExerciseSamplescreenshots/exercise_distance.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exercise_distance.png)
 
-![exercise in progress screenshot](ExerciseSamplescreenshots/exercise_lap.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exercise_lap.png)
 
-![exercise in progress screenshot](ExerciseSamplescreenshots/exercise_speed.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exercise_speed.png)
 
 While an exercise is in progress, if you leave the app, an ongoing notification appears, offering
 quick return to the exercise screen.
 
-![ongoing notification screenshot](ExerciseSamplescreenshots/on_going.png)
+![ongoing notification screenshot](ExerciseSample/screenshots/on_going.png)
 
 On devices where the exercise capability is not available, you will see a screen like this:
 
-![exercise unavailable screenshot](ExerciseSamplescreenshots/not_available.png)
+![exercise unavailable screenshot](ExerciseSample/screenshots/not_available.png)
 
 ### Using synthetic data
 

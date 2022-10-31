@@ -16,10 +16,7 @@
 
 package com.example.exercise
 
-import android.content.res.ColorStateList
-import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,25 +24,18 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.health.services.client.data.AggregateDataPoint
 import androidx.health.services.client.data.CumulativeDataPoint
-import androidx.health.services.client.data.DataPoint
 import androidx.health.services.client.data.DataType
-import androidx.health.services.client.data.ExerciseState
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import androidx.wear.ambient.AmbientModeSupport
 import com.example.exercise.databinding.FragmentCaloriesBinding
-import com.example.exercise.databinding.FragmentExerciseBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import java.time.Duration
-import java.time.Instant
 import javax.inject.Inject
-import kotlin.math.roundToInt
+
 
 /**
  * Fragment showing the exercise controls and current exercise metrics.
@@ -65,8 +55,6 @@ class CaloriesFragment : Fragment() {
 
     private var activeDurationUpdate = ActiveDurationUpdate()
     private var uiBindingJob: Job? = null
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater,

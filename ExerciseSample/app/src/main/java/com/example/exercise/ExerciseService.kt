@@ -62,7 +62,6 @@ import javax.inject.Inject
  *
  * (see [Bound Services](https://developer.android.com/guide/components/bound-services))
  */
-//바꿀것은 없어보이나 연관된 것 찾아보기
 @AndroidEntryPoint
 class ExerciseService : LifecycleService() {
 
@@ -95,9 +94,8 @@ class ExerciseService : LifecycleService() {
     /**
      * Prepare exercise in this service's coroutine context.
      */
-    //그냥 밑에 다 코루틴임. launch 하는거보면.
+
     fun prepareExercise() {
-        //코루틴
         lifecycleScope.launch {
             healthServicesManager.prepareExercise()
         }

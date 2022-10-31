@@ -16,34 +16,23 @@
 
 package com.example.exercise
 
-import android.content.res.ColorStateList
-import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.health.services.client.data.AggregateDataPoint
-import androidx.health.services.client.data.CumulativeDataPoint
 import androidx.health.services.client.data.DataPoint
 import androidx.health.services.client.data.DataType
-import androidx.health.services.client.data.ExerciseState
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import androidx.wear.ambient.AmbientModeSupport
-import com.example.exercise.databinding.FragmentExerciseBinding
 import com.example.exercise.databinding.FragmentHeartrateBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import java.time.Duration
-import java.time.Instant
 import javax.inject.Inject
 import kotlin.math.roundToInt
 
@@ -58,25 +47,21 @@ class HeartrateFragment : Fragment() {
 
     private val viewModel: MainViewModel by activityViewModels()
 
-    //FragmentExerciseBinding -> FragmentHeartrateBinding
     private var _binding: FragmentHeartrateBinding? = null
     private val binding get() = _binding!!
 
     private var serviceConnection = ExerciseServiceConnection()
 
-    private var cachedExerciseState = ExerciseState.USER_ENDED
     private var activeDurationUpdate = ActiveDurationUpdate()
     private var uiBindingJob: Job? = null
 
-    private lateinit var ambientController: AmbientModeSupport.AmbientController
-    private lateinit var ambientModeHandler: AmbientModeHandler
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //FragmentExerciseBinding ->
         _binding = FragmentHeartrateBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -84,13 +69,11 @@ class HeartrateFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //뒤로가기 버튼 기능
         binding.backButton.setOnClickListener {
             it.isEnabled = false
             findNavController().navigate(R.id.exerciseFragment)
         }
 
-        //각각의 text에 맞는 상태를 부여
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 val capabilities =
@@ -98,23 +81,11 @@ class HeartrateFragment : Fragment() {
                 val supportedTypes = capabilities.supportedDataTypes
 
                 // Set enabled state for relevant text elements.
-                // heartRateText -> heart2Text
                 binding.heartRateText.isEnabled = DataType.HEART_RATE_BPM in supportedTypes
             }
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.keyPressFlow.collect {
                     healthServicesManager.markLap()
-                }
-            }
-        }
-
-        // Ambient Mode
-        ambientModeHandler = AmbientModeHandler()
-        ambientController = AmbientModeSupport.attach(requireActivity())
-        viewLifecycleOwner.lifecycleScope.launch {
-            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.ambientEventFlow.collect {
-                    ambientModeHandler.onAmbientEvent(it)
                 }
             }
         }
@@ -131,31 +102,6 @@ class HeartrateFragment : Fragment() {
         _binding = null
     }
 
-    //버튼 누른거 listener로 감지해서, 이런 함수 실행한다~
-    private fun startEndExercise() {
-        if (cachedExerciseState.isEnded) {
-            tryStartExercise()
-        } else {
-            checkNotNull(serviceConnection.exerciseService) {
-                "Failed to achieve ExerciseService instance"
-            }.endExercise()
-        }
-    }
-
-    private fun tryStartExercise() {
-        viewLifecycleOwner.lifecycleScope.launch {
-            if (healthServicesManager.isTrackingExerciseInAnotherApp()) {
-                // Show the user a confirmation screen.
-                findNavController().navigate(R.id.to_newExerciseConfirmation)
-            } else if (!healthServicesManager.isExerciseInProgress()) {
-                checkNotNull(serviceConnection.exerciseService) {
-                    "Failed to achieve ExerciseService instance"
-                }.startExercise()
-            }
-        }
-    }
-
-    //코루틴 돌리기
     private fun bindViewsToService() {
         if (uiBindingJob != null) return
 
@@ -179,65 +125,11 @@ class HeartrateFragment : Fragment() {
         }
     }
 
-    private fun unbindViewsFromService() {
-        uiBindingJob?.cancel()
-        uiBindingJob = null
-    }
-
     private fun updateMetrics(data: Map<DataType, List<DataPoint>>) {
-        // heartRateText -> heart2Text
         data[DataType.HEART_RATE_BPM]?.let {
             binding.heartRateText.text = it.last().value.asDouble().roundToInt().toString()
         }
     }
 
-    private fun setAmbientUiState(isAmbient: Boolean) {
-        // Change icons to white while in ambient mode.
-        val iconTint = if (isAmbient) {
-            Color.WHITE
-        } else {
-            resources.getColor(R.color.primary_orange, null) //앱 ui가 오렌지색이엇던 이유..
-        }
-        // heartRateIcon -> heart2Icon
-        ColorStateList.valueOf(iconTint).let {
-            binding.heartRateIcon.imageTintList = it
-        }
-    }
-
-    private fun performOneTimeUiUpdate() {
-        val service = checkNotNull(serviceConnection.exerciseService) {
-            "Failed to achieve ExerciseService instance"
-        }
-        updateMetrics(service.exerciseMetrics.value)
-
-        activeDurationUpdate = service.exerciseDurationUpdate.value
-    }
-
-    inner class AmbientModeHandler {
-        internal fun onAmbientEvent(event: AmbientEvent) {
-            when (event) {
-                is AmbientEvent.Enter -> onEnterAmbient()
-                is AmbientEvent.Exit -> onExitAmbient()
-                is AmbientEvent.Update -> onUpdateAmbient()
-            }
-        }
-
-        private fun onEnterAmbient() {
-            // Note: Apps should also handle low-bit ambient and burn-in protection.
-            unbindViewsFromService()
-            setAmbientUiState(true)
-            performOneTimeUiUpdate()
-        }
-
-        private fun onExitAmbient() {
-            performOneTimeUiUpdate()
-            setAmbientUiState(false)
-            bindViewsToService()
-        }
-
-        private fun onUpdateAmbient() {
-            performOneTimeUiUpdate()
-        }
-    }
 
 }

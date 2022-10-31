@@ -82,26 +82,29 @@ class ExerciseFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // start와 end button
         binding.startEndButton.setOnClickListener {
-            // App could take a perceptible amount of time to transition between states; put button into
-            // an intermediary "disabled" state to provide UI feedback.
             it.isEnabled = false
             startEndExercise()
         }
-        // pause 와 resume
+
         binding.pauseResumeButton.setOnClickListener {
-            // App could take a perceptible amount of time to transition between states; put button into
-            // an intermediary "disabled" state to provide UI feedback.
             it.isEnabled = false
             pauseResumeExercise()
         }
 
         binding.heartRateText.setOnClickListener {
-            // App could take a perceptible amount of time to transition between states; put button into
-            // an intermediary "disabled" state to provide UI feedback.
             it.isEnabled = false
             findNavController().navigate(R.id.heartrateFragment)
+        }
+
+        binding.caloriesText.setOnClickListener {
+            it.isEnabled = false
+            findNavController().navigate(R.id.caloriesFragment)
+        }
+
+        binding.distanceText.setOnClickListener {
+            it.isEnabled = false
+            findNavController().navigate(R.id.distanceFragment)
         }
 
         binding.speedText.setOnClickListener {
@@ -114,17 +117,6 @@ class ExerciseFragment : Fragment() {
             findNavController().navigate(R.id.lapsFragment)
         }
 
-        binding.distanceText.setOnClickListener {
-            it.isEnabled = false
-            findNavController().navigate(R.id.distanceFragment)
-        }
-
-        binding.caloriesText.setOnClickListener {
-            it.isEnabled = false
-            findNavController().navigate(R.id.caloriesFragment)
-        }
-
-
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 val capabilities =
@@ -136,8 +128,6 @@ class ExerciseFragment : Fragment() {
                 binding.caloriesText.isEnabled = DataType.TOTAL_CALORIES in supportedTypes
                 binding.distanceText.isEnabled = DataType.DISTANCE in supportedTypes
                 binding.speedText.isEnabled = DataType.SPEED in supportedTypes
-
-
                 binding.lapsText.isEnabled = true
             }
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {

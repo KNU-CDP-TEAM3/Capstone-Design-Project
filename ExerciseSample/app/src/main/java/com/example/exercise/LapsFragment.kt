@@ -59,7 +59,6 @@ class LapsFragment : Fragment() {
 
     private val viewModel: MainViewModel by activityViewModels()
 
-    //FragmentExerciseBinding -> FragmentHeartrateBinding
     private var _binding: FragmentLapsBinding? = null
     private val binding get() = _binding!!
 
@@ -67,18 +66,13 @@ class LapsFragment : Fragment() {
 
     private var cachedExerciseState = ExerciseState.USER_ENDED
     private var activeDurationUpdate = ActiveDurationUpdate()
-    private var chronoTickJob: Job? = null
     private var uiBindingJob: Job? = null
-
-    private lateinit var ambientController: AmbientModeSupport.AmbientController
-    private lateinit var ambientModeHandler: AmbientModeHandler
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //FragmentExerciseBinding ->
         _binding = FragmentLapsBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -86,13 +80,11 @@ class LapsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //뒤로가기 버튼 기능
         binding.backButton.setOnClickListener {
             it.isEnabled = false
             findNavController().navigate(R.id.exerciseFragment)
         }
 
-        //각각의 text에 맞는 상태를 부여
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 val capabilities =
@@ -100,23 +92,11 @@ class LapsFragment : Fragment() {
                 val supportedTypes = capabilities.supportedDataTypes
 
                 // Set enabled state for relevant text elements.
-                // heartRateText -> heart2Text
                 binding.lapsText.isEnabled = true
             }
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.keyPressFlow.collect {
                     healthServicesManager.markLap()
-                }
-            }
-        }
-
-        // Ambient Mode
-        ambientModeHandler = AmbientModeHandler()
-        ambientController = AmbientModeSupport.attach(requireActivity())
-        viewLifecycleOwner.lifecycleScope.launch {
-            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.ambientEventFlow.collect {
-                    ambientModeHandler.onAmbientEvent(it)
                 }
             }
         }
@@ -179,63 +159,8 @@ class LapsFragment : Fragment() {
         }
     }
 
-    private fun unbindViewsFromService() {
-        uiBindingJob?.cancel()
-        uiBindingJob = null
-    }
-
     private fun updateLaps(laps: Int) {
         binding.lapsText.text = laps.toString()
-    }
-
-
-    private fun setAmbientUiState(isAmbient: Boolean) {
-        // Change icons to white while in ambient mode.
-        val iconTint = if (isAmbient) {
-            Color.WHITE
-        } else {
-            resources.getColor(R.color.primary_orange, null) //앱 ui가 오렌지색이엇던 이유..
-        }
-        // heartRateIcon -> heart2Icon
-        ColorStateList.valueOf(iconTint).let {
-            binding.lapsIcon.imageTintList = it
-        }
-    }
-
-    private fun performOneTimeUiUpdate() {
-        val service = checkNotNull(serviceConnection.exerciseService) {
-            "Failed to achieve ExerciseService instance"
-        }
-        updateLaps(service.exerciseLaps.value)
-
-        activeDurationUpdate = service.exerciseDurationUpdate.value
-    }
-
-    inner class AmbientModeHandler {
-        internal fun onAmbientEvent(event: AmbientEvent) {
-            when (event) {
-                is AmbientEvent.Enter -> onEnterAmbient()
-                is AmbientEvent.Exit -> onExitAmbient()
-                is AmbientEvent.Update -> onUpdateAmbient()
-            }
-        }
-
-        private fun onEnterAmbient() {
-            // Note: Apps should also handle low-bit ambient and burn-in protection.
-            unbindViewsFromService()
-            setAmbientUiState(true)
-            performOneTimeUiUpdate()
-        }
-
-        private fun onExitAmbient() {
-            performOneTimeUiUpdate()
-            setAmbientUiState(false)
-            bindViewsToService()
-        }
-
-        private fun onUpdateAmbient() {
-            performOneTimeUiUpdate()
-        }
     }
 
 }

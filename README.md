@@ -60,9 +60,9 @@ Click on each data item to view one piece of information at a time.
 
 ![exercise in progress screenshot](ExerciseSample/screenshots/exe_cal.png)
 
-![exercise in progress screenshot](ExerciseSample/screenshots/exe_distance.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exe_dist.png)
 
-![exercise in progress screenshot](ExerciseSample/screenshots/exe_lap.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exe_laps.png)
 
 ![exercise in progress screenshot](ExerciseSample/screenshots/exe_speed.png)
 

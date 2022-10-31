@@ -42,7 +42,7 @@ Press the START button when the confirmation is complete.
 
 If the necessary exercise capabilities are available, you will see a screen like this:
 
-![exercise available screenshot](ExerciseSample/screenshots/exe.png)
+![exercise available screenshot](ExerciseSample/screenshots/exe_available.png)
 ![exercise available screenshot](ExerciseSample/screenshots/exe_btn.png)
 
 When you press start, the app configures a running exercise and starts it. (You may need to use the

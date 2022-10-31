@@ -56,15 +56,15 @@ press one of the hardware buttons around the watch frame.
 
 Click on each data item to view one piece of information at a time.
 
-![exercise in progress screenshot](ExerciseSample/screenshots/exercise_heart.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exe_heart.png)
 
-![exercise in progress screenshot](ExerciseSample/screenshots/exercise_cal.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exe_cal.png)
 
-![exercise in progress screenshot](ExerciseSample/screenshots/exercise_distance.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exe_distance.png)
 
-![exercise in progress screenshot](ExerciseSample/screenshots/exercise_lap.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exe_lap.png)
 
-![exercise in progress screenshot](ExerciseSample/screenshots/exercise_speed.png)
+![exercise in progress screenshot](ExerciseSample/screenshots/exe_speed.png)
 
 While an exercise is in progress, if you leave the app, an ongoing notification appears, offering
 quick return to the exercise screen.

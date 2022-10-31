@@ -43,7 +43,7 @@ Press the START button when the confirmation is complete.
 If the necessary exercise capabilities are available, you will see a screen like this:
 
 ![exercise available screenshot](ExerciseSample/screenshots/exe.png)
-![exercise available screenshot](ExerciseSample/screenshots/exe_start_pause.png)
+![exercise available screenshot](ExerciseSample/screenshots/exe_button.png)
 
 When you press start, the app configures a running exercise and starts it. (You may need to use the
 [synthetic data provider](#using-synthetic-data) so that Health Services doesn't immediately pause
